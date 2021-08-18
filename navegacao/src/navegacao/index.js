@@ -1,6 +1,12 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native'
+import Stack from './Stack';
 
-const Navegacao = () => <Text>Hello</Text>;
-
-export default Navegacao;
+export default props => (
+    <SafeAreaView style={{flex: 1}}>
+        <NavigationContainer>
+            <Stack />
+        </NavigationContainer>
+    </SafeAreaView>
+);
